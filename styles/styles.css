@@ -185,7 +185,7 @@
         margin: auto;
         display: flex;
         justify-content: space-between;
-        /* overflow: scroll; */
+        overflow: scroll;
     }
 
     .playlist_song_card {
