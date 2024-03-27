@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+            <h1>Play song html</h1>
+
+            <audio src="Teri Ho Na Saki .mp3" controls id="Teri">
+            </audio>
+
+            <Button onclick="plysong()">play</Button>
+            <button onclick="pausesong()">Pause</button>
+        
+            <button onclick="get()">Click to count</button>
+
+                <h1 id="ct">0</h1>
+
+        <script>
+
+                function plysong(){
+
+                    document.getElementById('Teri').play();
+                
+
+                }   
+
+                
+                function pausesong(){
+
+
+                    document.getElementById('Teri').pause();
+
+                }
+                
+                function get(){
+
+
+                        document.getElementById('ct').innerText=1;
+
+
+                }
+
+
+
+</script>
+
+</body>
+</html>
