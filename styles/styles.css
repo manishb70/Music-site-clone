@@ -112,6 +112,12 @@ header ul {
 }
 
 
+.play_box label{
+
+    font-size: 1.1rem; margin-left: 5%;margin-top: 2%;
+}
+
+
 .trending_music_card {
 
     /* border: 1px solid red; */
