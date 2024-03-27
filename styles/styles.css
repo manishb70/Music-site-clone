@@ -254,8 +254,12 @@
 
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-around;
+                justify-content: space-between;
                 width: 94%;
                 margin: auto;
+                /* comment by dilip */
+
 
         }
+
+        /* comment out here by dilip */
