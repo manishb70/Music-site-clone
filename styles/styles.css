@@ -90,6 +90,8 @@ header ul {
     border-radius: 10px;
     margin-top: 14px;
     overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -121,26 +123,24 @@ header ul {
 .trending_music_card {
 
     /* border: 1px solid red; */
-    margin: 1%;
+    margin: 0px 10px 0px 20px;
     width: 13rem;
-    height: 15rem;
-    height: 83%;
-    border: 1px solid #BDE3FF;
-    box-shadow: 0px 0px 77px -33px rgba(0, 0, 0, 0.75);
-    background-color: #F5FBFF;
-    border-radius: 1rem;
-    min-width: 189px;
-
+    height: 12rem;
+    height: 88%;
+    /* border: 1px solid #ffffff; */
+    box-shadow: 0px 0px 35px -26px rgba(0, 0, 0, 5.75);
+    background-color: #d3d3d3;
+    /* border-radius: 1rem; */
+    min-width: 180px;
 }
 
 
 
 .trending_music_card img {
 
-    width: 91%;
-    border-radius: 1rem;
+    width: 90%;
+    border-radius: 12px;
     margin-left: 5%;
-    margin-top: 4%;
 }
 
 .play_box {
@@ -151,7 +151,7 @@ header ul {
     display: flex;
     justify-content: space-between;
     font-size: 0.90rem;
-    margin-top: -3%;
+    margin-top: 6%;
 
 }
 
