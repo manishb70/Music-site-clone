@@ -28,7 +28,7 @@ header {
     margin-top: 10px;
     border-radius: 10px;
     border: 1px solid #BDE3FF;
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 
@@ -79,6 +79,7 @@ header ul {
     float: right;
     /* background-color: red; */
     /* border:2px solid black; */
+    transition: .5s;
 }
 
 .trending {
@@ -93,6 +94,7 @@ header ul {
     overflow: scroll;
     overflow-y: hidden;
     /* overflow-x: hidden; */
+    transition: .2s;
 }
 
 
@@ -193,6 +195,7 @@ header ul {
     overflow: scroll;
     overflow-y: visible;
     overflow-x: scroll;
+    transition: .2s;
 }
 
 .playlist h2 {
@@ -248,7 +251,7 @@ header ul {
             border: 2px solid #E4CCFF;
             background-color: #FBF7FF;
             margin-top: 10px;
-
+            transition: .2s;
 
     }
 
@@ -284,3 +287,59 @@ header ul {
             margin: auto;
             text-align: center;
     }
+
+    #chk-btn{
+            float: right;
+            display: none;
+        }
+
+
+
+        @media screen and (max-width: 736px) {
+            
+            #chk-btn{
+                    display: block;      
+                }
+            
+
+                nav ul li a{
+
+
+                    display: block;
+                }
+
+                nav ul li{
+
+
+                    display: block;
+
+                    width: 100%;
+                }
+
+                nav ul{
+
+                    display: block;
+                    width: 96vw;
+                    background-color: black;
+                    text-align: center;
+                    position: absolute;
+                    border-radius: 10px;
+                    left: -100%;
+                    margin: auto;
+                }
+
+
+                #chkbox:checked ~ ul{
+
+                        /* background-color: brown; */
+                        left: 0;
+                        
+
+                    }
+
+             
+                    
+
+        }
+
+
