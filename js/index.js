@@ -20,13 +20,14 @@
               if(count){
                   document.getElementById('music1').setAttribute("class","fa fa-pause")
                   count = false
-                  
+                  document.getElementById("song2").play()
                   
                     
                     }else{
 
                         document.getElementById('music1').setAttribute("class","fa-regular fa-circle-play")
                         count = true
+                        document.getElementById("song2").pause()
                     }
                     })
                 
