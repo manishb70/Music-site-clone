@@ -92,7 +92,7 @@ header ul {
     margin-top: 14px;
     overflow: scroll;
     overflow-y: hidden;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 
@@ -187,10 +187,12 @@ header ul {
     margin: auto;
     border-radius: 10px;
     margin-top: 3%;
-    height: 50vh;
+    /* height: 50vh; */
     padding-bottom: 2%  ;
     /* flex-wrap: wrap; */
     overflow: scroll;
+    overflow-y: visible;
+    overflow-x: scroll;
 }
 
 .playlist h2 {
@@ -280,5 +282,5 @@ header ul {
             justify-content: space-around;
             width: 94%;
             margin: auto;
-
+            text-align: center;
     }
