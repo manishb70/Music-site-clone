@@ -10,7 +10,10 @@
     box-sizing: border-box;
 }
 
+i{
 
+    transition: 3s;
+}
 body {
 
     background-color: #FFFCF1;
@@ -348,4 +351,18 @@ header ul {
 
             margin-right: 2%;
             font-size: 1.4rem;
+        }
+
+
+        .play-bar{
+            margin: auto;
+            width: 97vw;
+            position: sticky;
+            text-align: center;
+            border: 1px solid black ;
+        }
+        .play-bar input{
+
+            width: 100%;
+
         }
