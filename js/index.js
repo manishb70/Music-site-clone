@@ -131,12 +131,8 @@ Array.from(document.getElementsByClassName('song_card')).forEach((element, i) =>
             element.getElementsByTagName('i')[0].setAttribute("class", "fa fa-play")
         }
 
-
-
-
     })
 })
-
 
 
 Array.from(document.getElementsByClassName('trending_music_card')).forEach((element, i) => {
@@ -152,7 +148,7 @@ Array.from(document.getElementsByClassName('trending_music_card')).forEach((elem
             element.getElementsByTagName('audio')[0].play()
             element.getElementsByTagName('i')[0].setAttribute("class", "fa fa-pause")
             // progress = parseInt((audioElement.currentTime / audioElement.duration) * 100);
-
+            // console.log(element.getElementsByTagName('audio')[0].currentTime)
 
 
         } else {
@@ -171,17 +167,17 @@ Array.from(document.getElementsByClassName('trending_music_card')).forEach((elem
 
 
 
-document.getElementsByClassName('playlist_song_card')[0].addEventListener('click', () => {
+// document.getElementsByClassName('playlist_song_card')[0].addEventListener('click', () => {
 
 
 
-    console.log("Hello world")
+//     console.log("Hello world")
 
-    pauseallsong()
+//     pauseallsong()
 
 
 
-})
+// })
 
 
 
