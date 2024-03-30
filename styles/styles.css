@@ -85,6 +85,7 @@ header ul {
     transition: .5s;
 }
 
+
 .trending {
 
     width: 97vw;
@@ -98,9 +99,13 @@ header ul {
     overflow-y: hidden;
     /* overflow-x: hidden; */
     transition: .2s;
+    
 }
 
+::-webkit-scrollbar-track{
 
+    width: 100px;
+}
 .trending h2 {
 
     margin: 1%;
@@ -355,14 +360,29 @@ header ul {
 
 
         .play-bar{
-            margin: auto;
-            width: 97vw;
+            width: 94vw;
             position: sticky;
             text-align: center;
-            border: 1px solid black ;
+            border: 1px solid black;
+            position: fixed;
+            bottom: 10px;
+            left: 2vw;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding-bottom: 5px;
+            opacity: 0;
+            transition: 0.4s;
+
         }
         .play-bar input{
 
-            width: 100%;
-
+            width: 97%;
+            margin-top: 4px;
         }
+
+    ::-webkit-scrollbar{
+
+
+        width:1px;
+    }

@@ -121,17 +121,31 @@ Array.from(document.getElementsByClassName('song_card')).forEach((element, i) =>
 
             element.getElementsByTagName('audio')[0].play()
             element.getElementsByTagName('i')[0].setAttribute("class", "fa fa-pause")
+            document.getElementsByClassName('play-bar')[0].style.opacity=1
 
+            element.getElementsByTagName('audio')[0].addEventListener('timeupdate',()=>{
 
+            songcurrentime=element.getElementsByTagName('audio')[0].currentTime
+            songduration=element.getElementsByTagName('audio')[0].duration
+
+            document.getElementsByClassName('play-bar')[0].getElementsByTagName('input')[0].value=songcurrentime/songduration*100
+            // document.getElementsByClassName('play-bar').value=10
+            // console.log(parseInt(songcurrentime/songduration*100))
+            
+        
+        })
 
 
         } else {
 
             element.getElementsByTagName('audio')[0].pause()
             element.getElementsByTagName('i')[0].setAttribute("class", "fa fa-play")
+            document.getElementsByClassName('play-bar')[0].style.opacity=0
         }
 
     })
+
+
 })
 
 
@@ -139,7 +153,14 @@ Array.from(document.getElementsByClassName('trending_music_card')).forEach((elem
     element.addEventListener('click', (e) => {
 
         console.log(element.getElementsByTagName('audio')[0])
+        // document.getElementById('Teri').addEventListener('timeupdate',()=>{
 
+        //     songcurrentime=element.getElementsByTagName('audio')[0].currentTime
+        //     songduration=element.getElementsByTagName('audio')[0].duration
+
+        //     document.getElementById('bar').value=songcurrentime/songduration*100
+
+        // })
         console.log(e.target.id)
         if (element.getElementsByTagName('audio')[0].paused) {
             pauseallsongtrending()
@@ -147,21 +168,27 @@ Array.from(document.getElementsByClassName('trending_music_card')).forEach((elem
 
             element.getElementsByTagName('audio')[0].play()
             element.getElementsByTagName('i')[0].setAttribute("class", "fa fa-pause")
+            document.getElementsByClassName('play-bar')[0].style.opacity=1
             // progress = parseInt((audioElement.currentTime / audioElement.duration) * 100);
             // console.log(element.getElementsByTagName('audio')[0].currentTime)
+                console.log(document.querySelector('.play-bar'))
+                console.log(document.getElementsByClassName('play-bar')[0])
 
-
+                
         } else {
 
             element.getElementsByTagName('audio')[0].pause()
             element.getElementsByTagName('i')[0].setAttribute("class", "fa fa-play")
+            document.getElementsByClassName('play-bar')[0].style.opacity=0
         }
 
 
 
 
     })
+        
 })
+
 
 
 
