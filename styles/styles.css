@@ -174,7 +174,7 @@ header ul {
     background-color: #FBFBFB;
     border: 2px solid #E6E6E6;
     width: 97vw;
-    height: 400px;
+    height: 50vh;
     margin: auto;
     margin-top: 5%;
     border-radius: 10px;
@@ -349,6 +349,11 @@ header ul {
 
              
                     
+                    .image_slide{
+
+                        height: 30vh;
+                    }
+
 
         }
 
@@ -385,4 +390,25 @@ header ul {
 
 
         width:1px;
+    }
+
+
+    .container {
+
+        margin: auto;
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+
+    .container img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: 1s;
+        border-radius: 10px;
     }

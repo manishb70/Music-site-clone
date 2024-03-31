@@ -263,3 +263,34 @@ function pauseallsongtrending() {
 
 
 }
+
+
+var counter = 0;
+
+Array.from(document.getElementsByClassName('container')[0].getElementsByTagName('img')).forEach((element2, i) => {
+    element2.style.left = `${i * 100}%`
+});
+
+function slideimage() {
+
+    Array.from(document.getElementsByClassName('container')[0].getElementsByTagName('img')).forEach((element2, i) => {
+
+        element2.style.transform = `translateX(-${counter * 100}%)`
+
+    });
+
+}
+        function nextimage(){
+            
+            
+            if(counter>document.getElementsByClassName('container')[0].getElementsByTagName('img').length-1){
+                counter=0
+                console.log("value is greater then 3")    
+            }
+            slideimage()
+            counter++
+        }    
+  
+
+setInterval( nextimage,1500)       
+
